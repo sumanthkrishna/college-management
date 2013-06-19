@@ -1,0 +1,18 @@
+<html>
+<head>
+<title> home </title>
+</head>
+<body>
+welcome
+		<?php
+		session_start();
+echo $_SESSION['id'];
+
+?> user....
+
+<a href="attendance.php">Attendance</a><br>
+<a href="results.php">Exam Results</a><br>
+<a href="change.php">Change Password</a><br>
+<a href="logout.php">Logout</a><br>
+</body>
+</html>
