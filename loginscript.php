@@ -32,7 +32,6 @@ if($data1==1)
 else
 {
 header( "refresh:5;url=login.php" );
-
 }
    
 ?>
