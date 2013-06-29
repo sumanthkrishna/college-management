@@ -2,8 +2,7 @@
 session_start();
 include('../auth.php');
 
-include('../include/header.php');
-include('leftdiv.php');
+include('../admin/adminheader.php');
 
 ?>
 
