@@ -1,8 +1,7 @@
 <?php
 session_start();
 include('../auth.php');
-include('../include/header.php');
-include('leftdiv.php');
+include('../admin/adminheader.php');
 
 ?>
 <form id="FormName" action="added.php" method="post" name="FormName">

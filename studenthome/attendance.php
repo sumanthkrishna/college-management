@@ -1,6 +1,5 @@
 <?php
-include('../include/header.php');
-include('leftdiv1.php');
+include('../admin/adminheader.php');
 
 
 
