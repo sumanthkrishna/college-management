@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('connect.php');
+include('../connect.php');
 $studentid=$_SESSION['username'];
 
 $result = mysql_query("SELECT * FROM studentdetails WHERE studentid='$studentid'");
@@ -8,7 +8,7 @@ $data= mysql_fetch_array($result);
 ?>
 <?php
 
-include('../include/header.php');
+include('../admin/adminheader.php');
 include('leftdiv.php');
 
 ?>

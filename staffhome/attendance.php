@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('connect.php');
+include('../connect.php');
 
 $result=mysql_query("select * from subjectplusstaff where staffid='$_SESSION[username]'");
 $num=mysql_num_rows($result);

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../auth.php');
-include('../include/header.php');
+include('../admin/adminheader.php');
 include('leftdiv.php');
 
 ?>
@@ -13,7 +13,7 @@ include('leftdiv.php');
 /// Copyright 2012 www.turningturnip.co.uk
 /// All rights reserved.
 
-include("connect.php");
+include("../connect.php");
 
 $studentid = $_POST['studentid'];
 

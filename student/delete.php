@@ -6,7 +6,7 @@
 /// All rights reserved.
 session_start();
 include('../auth.php');
-include("connect.php");
+include("../connect.php");
 
 $id = $_GET['id'];
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('connect.php');
+include('../connect.php');
 $attendance=$_GET['attendance'];
 $periods=$_GET['periods'];
 $date=$_GET['date'];

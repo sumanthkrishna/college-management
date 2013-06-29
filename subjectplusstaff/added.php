@@ -2,6 +2,7 @@
 session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
+include('leftdiv.php');
 
 ?><?php
 /// In order to use this script freely
@@ -10,7 +11,7 @@ include('../admin/adminheader.php');
 /// Copyright 2012 www.turningturnip.co.uk
 /// All rights reserved.
 
-include("connect.php");
+include("../connect.php");
 
 $staffid = trim(mysql_real_escape_string($_POST["staffid"]));
     	$courseid = trim(mysql_real_escape_string($_POST["courseid"]));

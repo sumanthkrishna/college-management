@@ -12,7 +12,7 @@ include('../admin/adminheader.php');
 /// Copyright 2012 www.turningturnip.co.uk
 /// All rights reserved.
 
-include("connect.php");
+include("../connect.php");
 $staffid=$_GET['staffid'];
 $result = mysql_query("SELECT * FROM staffplussubject where staffid='$staffid' ");
 $num = mysql_num_rows ($result);

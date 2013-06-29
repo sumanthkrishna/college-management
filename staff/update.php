@@ -15,7 +15,7 @@ include('leftdiv.php');
 /// Copyright 2012 www.turningturnip.co.uk
 /// All rights reserved.
 
-include("connect.php");
+include("../connect.php");
 
 $staffid = $_GET['staffid'];
 
