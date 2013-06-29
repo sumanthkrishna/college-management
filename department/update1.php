@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../auth.php');
-include('../include/header.php');
+include('../admin/adminheader.php');
 include('leftdiv.php');
 
 ?>
@@ -18,7 +18,7 @@ include('leftdiv.php');
 /// Copyright 2012 www.turningturnip.co.uk
 /// All rights reserved.
 
-include("connect.php");
+include("../connect.php");
 $courseid=$_GET['courseid'];
 $result = mysql_query("SELECT * FROM departmentdetails where coursename='$courseid'");
 $num = mysql_num_rows ($result);

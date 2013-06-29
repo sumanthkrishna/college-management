@@ -5,7 +5,7 @@
 /// Copyright 2012 www.turningturnip.co.uk
 /// All rights reserved.
 
-include("connect.php");
+include("../connect.php");
 
 $studentid = trim(mysql_real_escape_string($_POST["studentid"]));
 		$subjectid = trim(mysql_real_escape_string($_POST["subjectid"]));

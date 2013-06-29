@@ -2,6 +2,10 @@
 session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
+<<<<<<< HEAD
+=======
+include('leftdiv.php');
+>>>>>>> 332acf8003ddd3264ae1b99806a10e7a8dfa45ff
 
 ?>
 <a href="add.php">Add entry</a><br>
@@ -14,7 +18,7 @@ include('../admin/adminheader.php');
 /// Copyright 2012 www.turningturnip.co.uk
 /// All rights reserved.
 
-include("connect.php");
+include("../connect.php");
 
 $result = mysql_query("SELECT * FROM logindetails ");
 $num = mysql_num_rows ($result);

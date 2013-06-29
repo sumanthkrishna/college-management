@@ -1,7 +1,12 @@
 <?php
 session_start();
 include('../auth.php');
+<<<<<<< HEAD
 include('../admin/dminheader.php');
+=======
+include('../admin/adminheader.php');
+include('leftdiv.php');
+>>>>>>> 332acf8003ddd3264ae1b99806a10e7a8dfa45ff
 
 ?>
 <?php
