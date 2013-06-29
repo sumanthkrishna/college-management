@@ -114,3 +114,6 @@ li.right-menu > a
     color: #257E84 !important;
 }
 
+.menuSection {
+	float:right;
+}

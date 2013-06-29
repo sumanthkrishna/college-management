@@ -1,0 +1,26 @@
+body {
+
+	font-family : Arial;
+	font-size : 12px;
+
+}
+
+.welcome_content{
+
+	height:40%;
+}
+
+.pageContent .headerContent .logoTitle .logoSection {
+	float: left;
+}
+.pageContent .headerContent .logoTitle .titleSection {
+	float: right;
+	font-size: 36px;
+	margin-top: 15px;
+}
+.pageContent .headerContent .logoTitle .titleSection  .collegeCredits{
+	font-size:18px;
+}
+.clearfix {
+	clear: both;
+}
