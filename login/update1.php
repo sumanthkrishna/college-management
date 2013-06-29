@@ -2,11 +2,7 @@
 session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
-<<<<<<< HEAD
-=======
 include('leftdiv.php');
-
->>>>>>> 332acf8003ddd3264ae1b99806a10e7a8dfa45ff
 ?>
 <?php
 /// In order to use this script freely

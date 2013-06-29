@@ -2,10 +2,7 @@
 session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
-<<<<<<< HEAD
-=======
 include('leftdiv.php');
->>>>>>> 332acf8003ddd3264ae1b99806a10e7a8dfa45ff
 
 ?>
 <a href="add.php">Add entry</a><br>
