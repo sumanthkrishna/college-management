@@ -24,3 +24,6 @@ body {
 .clearfix {
 	clear: both;
 }
+.loginContent{
+	margin-left:300px;
+}

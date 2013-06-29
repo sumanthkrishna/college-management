@@ -41,7 +41,7 @@ session_start();
 		<div class="clearfix"></div>
 		<div class="menuSection">
 			<ul class="rgit_menu">
-				<li><a href="/adminhome.php">Home</a></li>
+				<li><a href="../home1.php">Home</a></li>
 				<li><a href="#">Departments </a>
 					<ul>
 						<li><a href="#">ECE</a></li>
@@ -63,16 +63,15 @@ session_start();
 				<li><a href="#">CONTACT</a></li>
 <?php				
 if(isset($_SESSION['user']))
-				echo "<li><a href='../logout.php'>Logout</a></li>";
+				echo "<li><a href='http://localhost/college-management/logout.php'>Logout</a></li>";
 else				
-				echo "<li><a href='../login	.php'>Login</a></li>";
+				echo "<li><a href='http://localhost/college-management/login.php'>Login</a></li>";
 ?>				
 			</ul>		
 		</div>
 	
 	</div>
 </div>
-
-
-
-
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+&nbsp;
+</div>

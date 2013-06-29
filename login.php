@@ -1,8 +1,7 @@
-<html>
-<head>
-<title>Login</title>
-</head>
-<body>
+<?php
+	include('include/header.php');
+?>
+<div class="loginContent">
 <form method="post" action="loginscript.php">
 <table>
 	<tr>
@@ -26,5 +25,7 @@
 	</tr>
 </table>
 </form>
-</body>
-</html>
+</div>
+<?php
+	include('include/footer.php');
+?>
