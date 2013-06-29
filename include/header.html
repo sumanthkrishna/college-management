@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Multi Level Hierarchical jQuery Menu: jQSimpleMenu</title>
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/jqsimplemenu.js"></script>
+    <link rel="stylesheet" href="css/jqsimplemenu.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu').jqsimplemenu();
+        });
+    </script>
+    <style type="text/css">
+        body
+        {
+            font-size: 12px;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="/adminhome.php">Home</a></li>
+        <li><a href="#">Departments </a>
+            <ul>
+                <li><a href="#">ECE</a></li>
+                <li><a href="#">EEE</a></li>
+                <li><a href="#">EIE</a></li>
+                <li><a href="#">CSE</a></li>
+				<li><a href="#">IT</a></li>
+				<li><a href="#">MECHANICAL</a></li>
+				<li><a href="#">CIVIL</a></li>
+            </ul>
+        </li>
+        <li><a href="#">TRAINING AND PLACEMENT</a></li>
+        <li><a href="#">LIBRARY</a></li>
+        <li><a href="#">ACHIEVEMENTS</a></li>
+    </ul>
+	<ul class="menu">
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">HOSTEL</a></li>
+		<li><a href="#">SPORTS</a></li>
+		<li><a href="#">ABOUT US</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ul>
+</body>
+</html>
