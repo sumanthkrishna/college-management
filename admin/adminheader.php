@@ -5,6 +5,7 @@
     <title>Rajeev Gandhi Memorial College of Engineering & Technology - Admin</title>
     <script type="text/javascript" src="../include/js/jquery-1.4.4.min.js"></script>
     <link rel="stylesheet" href="../include/css/rgit-styles.css" type="text/css" media="screen" />
+    
     <style type="text/css">
         body
         {

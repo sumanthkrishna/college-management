@@ -6,10 +6,10 @@ session_start();
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Multi Level Hierarchical jQuery Menu: jQSimpleMenu</title>
-    <script type="text/javascript" src="../include/js/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="../include/js/jqsimplemenu.js"></script>
-    <link rel="stylesheet" href="../include/css/jqsimplemenu.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="../include/css/rgit-styles.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="include/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="include/js/jqsimplemenu.js"></script>
+    <link rel="stylesheet" href="include/css/jqsimplemenu.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="include/css/rgit-styles.css" type="text/css" media="screen" />
     <script type="text/javascript">
         $(document).ready(function () {
             $('.rgit_menu').jqsimplemenu();
@@ -30,7 +30,7 @@ session_start();
 	<div class="headerContent"> 
 		<div class="logoTitle">
 			<div class="logoSection">
-				<img src="../include/images/rgm_logo.jpg" border="0"/>
+				<img src="include/images/rgm_logo.jpg" border="0"/>
 			</div>
 			<div class="titleSection">
 				<p class="collegeName">Rajeev Gandhi Memorial College of Engineering & Technology</p>

@@ -8,6 +8,7 @@ include('adminheader.php');
 
 
 echo "welcome to admin panel...!";
+include('leftdiv.php');
 
 include('../include/footer.php');
 ?>

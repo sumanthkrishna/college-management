@@ -1,5 +1,5 @@
 <?php
-	include('admin/adminheader.php');
+	include('/admin/adminheader.php');
 ?>
 <div class="loginContent">
 <form method="post" action="loginscript.php">
