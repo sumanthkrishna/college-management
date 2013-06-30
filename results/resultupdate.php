@@ -47,7 +47,7 @@ include('../connect.php');
     while($te3=mysql_fetch_row($te2))
 	{
      $stuid=$te3[0];
-	 echo "<form action='' method='post'>";?>  
+	 echo "<form  method='post'>";?>  
 
 	<tr>
 		<td><label name="stuid" value="<?php echo "$stuid";?>" readonly> <?php echo "$stuid";?></label></td>
