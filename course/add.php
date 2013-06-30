@@ -3,7 +3,7 @@ session_start();
 include('../auth.php');
 
 include('../admin/adminheader.php');
-include('../include/leftdiv.php');
+include('../admin/leftdiv.php');
 
 
 

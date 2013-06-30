@@ -2,7 +2,7 @@
 session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
-include('../include/leftdiv.php');
+include('../admin/leftdiv.php');
 ?>
 
 <form method="get" action="update1.php">
