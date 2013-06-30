@@ -2,14 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Multi Level Hierarchical jQuery Menu: jQSimpleMenu</title>
-    <script type="text/javascript" src="include/js/jquery-1.4.4.min.js"></script>
+    <title>Rajeev Gandhi Memorial College of Engineering & Technology - Admin</title>
+    <script type="text/javascript" src="../include/js/jquery-1.4.4.min.js"></script>
     <link rel="stylesheet" href="../include/css/rgit-styles.css" type="text/css" media="screen" />
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.rgit_menu').jqsimplemenu();
-        });
-    </script>
     <style type="text/css">
         body
         {
