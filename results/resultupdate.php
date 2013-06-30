@@ -16,18 +16,18 @@ include('../connect.php');
 <h1>Update Results here...</h1>
 
 <?php
-
-echo "<form action='' method='post'>";
- 
  $subid=$_POST['subjectid'];
-
  $te=mysql_query("select marksrequired,year,semester from subjectdetails where subjectid='$subid'");
   $te1=mysql_fetch_array($te);
   $yr=$te1['year'];
   $se=$te1['semester'];
-  $mrks=$te1['marksrequired']; ?> 
+  $mrks=$te1['marksrequired']; 
+  
+  $te2=mysql_query("select studentid from student where year='$yr' and semester='$se'");
+  
+  ?> 
 
-<table width="80%" border="1" cellpadding="10" align="vertical">
+<table width="60%" border="1" cellpadding="10">
 	<tr>
 		<td>Student ID</td>
 		<td>Subject Code</td>		
@@ -37,23 +37,22 @@ echo "<form action='' method='post'>";
 		<td>total</td>				
 		<td>Credits</td>	
 		<td colspan="3">Result</td>
-		
+	</tr>
 
-	</tr></table>
-
- <?php  $te2=mysql_query("select studentid from student where year='$yr' and semester='$se'");
-    while($te3=mysql_fetch_row($te2))
+ <?php  
+    while($te3 = mysql_fetch_row($te2))
    {
-     $stuid=$te3[0];?>
+     $stuid=$te3[0];
+	 
+	 echo "<form action='' method='post'>";
+	 ?>
   
-
-<table width="80%" border="1"> 
 	<tr>
-		<td><input type=text name="stuid" value="<?php echo "$stuid";?>" readonly> </td>
-		<td><input type=text name="subid" value="<?php echo "$subid";?>" readonly> </td>		
+		<td><label name="stuid" value="<?php echo "$stuid";?>" readonly> <?php echo "$stuid";?></label></td>
+		<td><label type=text name="subid" value="<?php echo "$subid";?>" readonly><?php echo "$subid";?></label> </td>		
 		<td><input type="text" name="inmr"/></td>
 		<td><input type="text"name="exmr"/></td>
-		<td><input type=text name="mrks" value="<?php echo "$mrks";?>" readonly> </td>
+		<td><label type=text name="mrks" value="<?php echo "$mrks";?>" readonly><?php echo "$mrks";?></label> </td>
 		<td><input type="text" name="total"/></td>
 		<td><input type="text" name="credits"/></td>	
 		<td>
@@ -61,13 +60,16 @@ echo "<form action='' method='post'>";
                     <option value="PASS">PASS</option>
                     <option value="FAIL">FAIL</option></select>		
 		</td>
-		<td><input type="submit" value="Save" onclick="<?php update();?>/></td>
+		<td><input type="submit" value="Save" onclick="<?php update();?>"/></td>
 		<td><input type="reset" value="Reset" /></td>	
 	</tr>
+		</form>	
+  <?php 
+     } 
+?>	
 
   </table>
-  <?php 
-     } ?></form>
+
 <?php include('../include/footer.php')?>
 </body>
 </html>
@@ -79,8 +81,6 @@ echo "<form action='' method='post'>";
 
 
 
-$suid=trim(mysql_real_escape_string($_POST["subid"]));
-$stid=trim(mysql_real_escape_string($_POST["stuid"]));
 $imr=trim(mysql_real_escape_string($_POST["inmr"]));
 $emr=trim(mysql_real_escape_string($_POST["exmr"]));
 $mrre=trim(mysql_real_escape_string($_POST["mrks"]));
@@ -90,7 +90,7 @@ $res=trim(mysql_real_escape_string($_POST["result"]));
 
 
 	$up=mysql_query("insert into 'examresults'('id','subjectid,'studentid','internalmarks','externalmarks','marksrequired',
-		    'total','credits','result')VALUES('','$suid','$stid','$imr', '$emr',
+		    'total','credits','result')VALUES('','$subid','$stuid','$imr', '$emr',
 			'$mrre','$tot','$cre','$res')");
 	 
 	
