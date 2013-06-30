@@ -6,10 +6,10 @@ session_start();
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Multi Level Hierarchical jQuery Menu: jQSimpleMenu</title>
-    <script type="text/javascript" src="include/js/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="include/js/jqsimplemenu.js"></script>
-    <link rel="stylesheet" href="include/css/jqsimplemenu.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="include/css/rgit-styles.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../include/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../include/js/jqsimplemenu.js"></script>
+    <link rel="stylesheet" href="../include/css/jqsimplemenu.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../include/css/rgit-styles.css" type="text/css" media="screen" />
     <script type="text/javascript">
         $(document).ready(function () {
             $('.rgit_menu').jqsimplemenu();
@@ -30,7 +30,7 @@ session_start();
 	<div class="headerContent"> 
 		<div class="logoTitle">
 			<div class="logoSection">
-				<img src="include/images/rgm_logo.jpg" border="0"/>
+				<img src="../include/images/rgm_logo.jpg" border="0"/>
 			</div>
 			<div class="titleSection">
 				<p class="collegeName">Rajeev Gandhi Memorial College of Engineering & Technology</p>
@@ -54,18 +54,18 @@ session_start();
 					</ul>
 				</li>
 				<li><a href="#">TRAINING AND PLACEMENT</a></li>
-				<li><a href="#">LIBRARY</a></li>
-				<li><a href="#">ACHIEVEMENTS</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">HOSTEL</a></li>
-				<li><a href="#">SPORTS</a></li>
-				<li><a href="#">ABOUT US</a></li>
-				<li><a href="#">CONTACT</a></li>
+				<li><a href="../staticpages/library.php">LIBRARY</a></li>
+				<li><a href="../staticpages/achievements.php">ACHIEVEMENTS</a></li>
+				<li><a href="../staticpages/gallery.php">Gallery</a></li>
+				<li><a href="../staticpages/hostel.php">HOSTEL</a></li>
+				<li><a href="../staticpages/sports.php">SPORTS</a></li>
+				<li><a href="../staticpages/aboutus.php">ABOUT US</a></li>
+				<li><a href="../staticpages/contactus.php">CONTACT</a></li>
 <?php				
 if(isset($_SESSION['user']))
 				echo "<li><a href='http://localhost/college-management/logout.php'>Logout</a></li>";
 else				
-				echo "<li><a href='http://localhost/college-management/login.php'>Login</a></li>";
+				echo "<li><a href='../login.php'>Login</a></li>";
 ?>				
 			</ul>		
 		</div>

@@ -16,8 +16,6 @@ include('../connect.php');
 <h1>Update Results here...</h1>
 
 <?php
-
-echo "<form action='' method='post'>";
  
  $subid=$_POST['subjectid'];
 
@@ -27,7 +25,7 @@ echo "<form action='' method='post'>";
   $se=$te1['semester'];
   $mrks=$te1['marksrequired']; ?> 
 
-<table width="80%" border="1" cellpadding="10" align="vertical">
+  <table width="80%" border="1">
 	<tr>
 		<td>Student ID</td>
 		<td>Subject Code</td>		
@@ -39,15 +37,17 @@ echo "<form action='' method='post'>";
 		<td colspan="3">Result</td>
 		
 
-	</tr></table>
+	</tr>
 
- <?php  $te2=mysql_query("select studentid from student where year='$yr' and semester='$se'");
+
+	<?php  $te2=mysql_query("select studentid from student where year='$yr' and semester='$se'");
     while($te3=mysql_fetch_row($te2))
-   {
-     $stuid=$te3[0];?>
+	{
+     $stuid=$te3[0];
+	 echo "<form action='' method='post'>";?>
   
 
-<table width="80%" border="1"> 
+
 	<tr>
 		<td><input type=text name="stuid" value="<?php echo "$stuid";?>" readonly> </td>
 		<td><input type=text name="subid" value="<?php echo "$subid";?>" readonly> </td>		
