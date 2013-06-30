@@ -3,7 +3,6 @@ session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
 include('../admin/leftdiv.php'); 
-
 ?>
 
 <form id="FormName" action="added.php" method="post"  enctype="multipart/form-data" name="FormName">

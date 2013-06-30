@@ -44,7 +44,7 @@
 </div>
 
 <div class="adminPageContent">
-	<div class="adminLeftMenu"><?php include('leftdiv.php');?></div>
+	<div class="adminLeftMenu"></div>
 	<div class="adminRighSection"></div>
 
 </div>
