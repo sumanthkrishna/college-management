@@ -54,16 +54,16 @@ session_start();
 					</ul>
 				</li>
 				<li><a href="#">TRAINING AND PLACEMENT</a></li>
-				<li><a href="../staticpages/library.php">LIBRARY</a></li>
-				<li><a href="../staticpages/achievements.php">ACHIEVEMENTS</a></li>
-				<li><a href="../staticpages/gallery.php">Gallery</a></li>
-				<li><a href="../staticpages/hostel.php">HOSTEL</a></li>
-				<li><a href="../staticpages/sports.php">SPORTS</a></li>
-				<li><a href="../staticpages/aboutus.php">ABOUT US</a></li>
-				<li><a href="../staticpages/contactus.php">CONTACT</a></li>
+				<li><a href="../library.php">LIBRARY</a></li>
+				<li><a href="../achievements.php">ACHIEVEMENTS</a></li>
+				<li><a href="../gallery.php">Gallery</a></li>
+				<li><a href="../hostel.php">HOSTEL</a></li>
+				<li><a href="../sports.php">SPORTS</a></li>
+				<li><a href="../aboutus.php">ABOUT US</a></li>
+				<li><a href="../contactus.php">CONTACT</a></li>
 <?php				
-if(isset($_SESSION['user']))
-				echo "<li><a href='http://localhost/college-management/logout.php'>Logout</a></li>";
+if(isset($_SESSION['username']))
+				echo "<li><a href='../logout.php'>Logout</a></li>";
 else				
 				echo "<li><a href='../login.php'>Login</a></li>";
 ?>				
