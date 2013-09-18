@@ -77,7 +77,7 @@ $(document).ready(function () {
     </ul>
   </li>
   <li><a href="#">Department Details</a>
-	<ul>
+    <ul>
       <li><a href="../department/add.php">Add department details</a></li>
       <li><a href="../department/search.php">Update department details</a></li>
     </ul>

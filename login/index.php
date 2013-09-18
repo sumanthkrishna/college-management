@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../auth.php');
-include('../admin/adminheader.php');
+include('../include/header.php');
 include('leftdiv.php');
 
 ?>
@@ -9,13 +9,9 @@ include('leftdiv.php');
 <br>
 
 <?php
-/// In order to use this script freely
-/// you must leave the following copyright
-/// information in this file:
-/// Copyright 2012 www.turningturnip.co.uk
-/// All rights reserved.
 
-include("../connect.php");
+
+include("connect.php");
 
 $result = mysql_query("SELECT * FROM logindetails ");
 $num = mysql_num_rows ($result);

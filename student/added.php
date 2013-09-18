@@ -1,11 +1,7 @@
 <?php
-/// In order to use this script freely
-/// you must leave the following copyright
-/// information in this file:
-/// Copyright 2012 www.turningturnip.co.uk
-/// All rights reserved.
 
-include("../connect.php");
+
+include("connect.php");
 
 $studentname = trim(mysql_real_escape_string($_POST["studentname"]));
     	$studentid = trim(mysql_real_escape_string($_POST["studentid"]));
@@ -18,7 +14,9 @@ $studentname = trim(mysql_real_escape_string($_POST["studentname"]));
 		$coursename = trim(mysql_real_escape_string($_POST["coursename"]));
 		$department = trim(mysql_real_escape_string($_POST["department"]));
 		$year = trim(mysql_real_escape_string($_POST["year"]));
-		$section = trim(mysql_real_escape_string($_POST["section"]));
+		$semester = trim(mysql_real_escape_string($_POST["semester"]));
+    
+        $section = trim(mysql_real_escape_string($_POST["section"]));
     	
 
 
@@ -69,23 +67,14 @@ if ($image)
 		else echo '<h3>uploaded successfull!</h3>';
  
 
-$results = mysql_query("INSERT INTO studentdetails (id, studentname, studentid, mobileno, fathermobileno, email, address, imagepath, yearofjoining, coursename, department, year, section)
-    VALUES ('', '$studentname', '$studentid', '$mobileno', '$fathermobileno', '$email', '$address', '$newname', '$yearofjoining', '$coursename', '$department', '$year', '$section')");
+$results = mysql_query("INSERT INTO studentdetails (id, studentname, studentid, mobileno, fathermobileno, email, address, imagepath, yearofjoining, coursename, department, year, semester, section)
+    VALUES ('', '$studentname', '$studentid', '$mobileno', '$fathermobileno', '$email', '$address', '$newname', '$yearofjoining', '$coursename', '$department', '$year','$semester', '$section')");
 
 if($results) { echo "Successfully Added"; } else { die('Invalid query: '.mysql_error()); }
 
 
 	}
  
-	//Display image
-	$rs=mysql_query("select * from address");
-	if($rs)
-		while($row=mysql_fetch_array($rs))
-		{
-		 ?>
-		 <img width="150" src="<?php echo $row['path'];?>"><br>
-		 <?php 
-		}
 }
 ?>
 

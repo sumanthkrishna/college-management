@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../auth.php');
-include('../admin/adminheader.php');
+include('../include/header.php');
 include('leftdiv.php');
 
 ?>
@@ -10,13 +10,8 @@ include('leftdiv.php');
 <br>
 
 <?php
-/// In order to use this script freely
-/// you must leave the following copyright
-/// information in this file:
-/// Copyright 2012 www.turningturnip.co.uk
-/// All rights reserved.
 
-include("../connect.php");
+include("connect.php");
 
 $result = mysql_query("SELECT * FROM studentdetails ");
 $num = mysql_num_rows ($result);
@@ -37,7 +32,9 @@ $id = stripslashes(mysql_result($result,$i,"id"));
 		$coursename = stripslashes(mysql_result($result,$i,"coursename"));
 		$department = stripslashes(mysql_result($result,$i,"department"));
 		$year = stripslashes(mysql_result($result,$i,"year"));
-		$section = stripslashes(mysql_result($result,$i,"section"));
+		$semester = stripslashes(mysql_result($result,$i,"semester"));
+    	
+        $section = stripslashes(mysql_result($result,$i,"section"));
 		
 	$row .= '<tr>
 	<td><a href="update.php?studentid='.$studentid.'">'.$studentname.'</a></td>

@@ -2,18 +2,14 @@
 session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
-include('leftdiv.php');
+include('../admin/leftdiv.php');
 
 ?>
 
 <?php
-/// In order to use this script freely
-/// you must leave the following copyright
-/// information in this file:
-/// Copyright 2012 www.turningturnip.co.uk
-/// All rights reserved.
 
-include("../connect.php");
+
+include("connect.php");
 
 $studentid = $_GET['studentid'];
 
@@ -78,6 +74,10 @@ extract($r_Z);
 <tr>
 <td width="150" align="right"><label for="year">year</label></td>
 <td><input name="year" maxlength="" type="text" value="<?php echo stripslashes($year) ?>"></td>
+</tr>
+<tr>
+<td width="150" align="right"><label for="semester">semester</label></td>
+<td><input name="semester" maxlength="" type="text" value="<?php echo stripslashes($semester) ?>"></td>
 </tr>
 
 <tr>

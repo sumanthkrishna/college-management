@@ -2,17 +2,14 @@
 session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
+include('../admin/leftdiv.php');
+
 ?><a href="add.php">Add entry</a><br>
 <br>
 
 <?php
-/// In order to use this script freely
-/// you must leave the following copyright
-/// information in this file:
-/// Copyright 2012 www.turningturnip.co.uk
-/// All rights reserved.
 
-include("../connect.php");
+include("connect.php");
 $staffid=$_GET['staffid'];
 $result = mysql_query("SELECT * FROM staffplussubject where staffid='$staffid' ");
 $num = mysql_num_rows ($result);

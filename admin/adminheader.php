@@ -32,10 +32,10 @@
 		<div class="clearfix"></div>
 		<div class="menuSection">
 			<?php				
-			if(isset($_SESSION['user']))
-							echo "<li><a href='http://localhost/college-management/logout.php'>Logout</a></li>";
+			if(isset($_SESSION['username']))
+							echo "<li><a href='../logout.php'>Logout</a></li>";
 			else				
-							echo "<li><a href='http://localhost/college-management/login.php'>Login</a></li>";
+							echo "<li><a href='../login.php'>Login</a></li>";
 			?>				
 		</div>
 	</div>

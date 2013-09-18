@@ -3,6 +3,7 @@ session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
 include('../admin/leftdiv.php'); 
+
 ?>
 
 <form id="FormName" action="added.php" method="post"  enctype="multipart/form-data" name="FormName">
@@ -64,6 +65,11 @@ include('../admin/leftdiv.php');
 </tr>
 
 <tr>
+<td width="150" align="right"><label for="semester">semester</label></td>
+<td><input name="semester" maxlength="" type="text" value="<?php echo stripslashes($semester) ?>"></td>
+</tr>
+
+<tr>
 <td width="150" align="right"><label for="section">section</label></td>
 <td><input name="section" maxlength="" type="text" value="<?php echo stripslashes($section) ?>"></td>
 </tr>
@@ -78,6 +84,12 @@ include('../admin/leftdiv.php');
 
 
 <?php
+
+
+include('../include/footer.php');
+
+
+?><?php
 
 
 include('../include/footer.php');

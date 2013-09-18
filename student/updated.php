@@ -2,18 +2,14 @@
 session_start();
 include('../auth.php');
 include('../admin/adminheader.php');
-include('leftdiv.php');
+include('../admin/leftdiv.php');
 
 ?>
 
 <?php
-/// In order to use this script freely
-/// you must leave the following copyright
-/// information in this file:
-/// Copyright 2012 www.turningturnip.co.uk
-/// All rights reserved.
 
-include("../connect.php");
+
+include("connect.php");
 
 $studentid = $_POST['studentid'];
 
@@ -27,11 +23,12 @@ $studentname = trim(mysql_real_escape_string($_POST["studentname"]));
 		$yearofjoining = trim(mysql_real_escape_string($_POST["yearofjoining"]));
 		$coursename = trim(mysql_real_escape_string($_POST["coursename"]));
 		$department = trim(mysql_real_escape_string($_POST["department"]));
-		$year = trim(mysql_real_escape_string($_POST["year"]));
+    	$year = trim(mysql_real_escape_string($_POST["year"]));
+    	$semester = trim(mysql_real_escape_string($_POST["semester"]));
 		$section = trim(mysql_real_escape_string($_POST["section"]));
 		
 $rsUpdate = mysql_query("UPDATE studentdetails
-	SET  studentname = '$studentname',  studentid = '$studentid',  mobileno = '$mobileno',  fathermobileno = '$fathermobileno',  email = '$email',  address = '$address',  imagepath = '$imagepath',  yearofjoining = '$yearofjoining',  coursename = '$coursename',  department = '$department',  year = '$year',  section = '$section'
+	SET  studentname = '$studentname',  studentid = '$studentid',  mobileno = '$mobileno',  fathermobileno = '$fathermobileno',  email = '$email',  address = '$address',  imagepath = '$imagepath',  yearofjoining = '$yearofjoining',  coursename = '$coursename',  department = '$department',  year = '$year',semester = '$semester',  section = '$section'
 	WHERE studentid = '$studentid' ");
 
 if($rsUpdate) { echo "Successfully updated"; } else { die('Invalid query: '.mysql_error()); }

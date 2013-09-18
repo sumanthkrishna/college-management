@@ -53,19 +53,19 @@ session_start();
 						<li><a href="#">CIVIL</a></li>
 					</ul>
 				</li>
-				<li><a href="#">TRAINING AND PLACEMENT</a></li>
-				<li><a href="../library.php">LIBRARY</a></li>
-				<li><a href="../achievements.php">ACHIEVEMENTS</a></li>
-				<li><a href="../gallery.php">Gallery</a></li>
-				<li><a href="../hostel.php">HOSTEL</a></li>
-				<li><a href="../sports.php">SPORTS</a></li>
-				<li><a href="../aboutus.php">ABOUT US</a></li>
-				<li><a href="../contactus.php">CONTACT</a></li>
+				<li><a href="trainingandplacement.php">TRAINING AND PLACEMENT</a></li>
+				<li><a href="library.php">LIBRARY</a></li>
+				<li><a href="achievements.php">ACHIEVEMENTS</a></li>
+				<li><a href="gallery.php">Gallery</a></li>
+				<li><a href="hostel.php">HOSTEL</a></li>
+				<li><a href="sports.php">SPORTS</a></li>
+				<li><a href="aboutus.php">ABOUT US</a></li>
+				<li><a href="contactus.php">CONTACT</a></li>
 <?php				
 if(isset($_SESSION['username']))
-				echo "<li><a href='../logout.php'>Logout</a></li>";
+				echo "<li><a href='logout.php'>Logout</a></li>";
 else				
-				echo "<li><a href='../login.php'>Login</a></li>";
+				echo "<li><a href='login.php'>Login</a></li>";
 ?>				
 			</ul>		
 		</div>

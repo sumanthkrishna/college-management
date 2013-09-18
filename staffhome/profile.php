@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../connect.php');
+include('connect.php');
 $staffid=$_SESSION['username'];
 
 $result = mysql_query("SELECT * FROM staffdetails WHERE staffname='$staffid'");

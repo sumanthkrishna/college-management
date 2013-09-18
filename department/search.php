@@ -1,8 +1,8 @@
 <?php
 session_start();
 include('../auth.php');
-include('../admin/adminheader.php');
-include('../admin/leftdiv.php');
+include('../include/header.php');
+include('leftdiv.php');
 
 ?>
 

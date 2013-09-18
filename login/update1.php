@@ -1,17 +1,14 @@
 <?php
 session_start();
 include('../auth.php');
-include('../admin/adminheader.php');
+include('../include/header.php');
 include('leftdiv.php');
+
 ?>
 <?php
-/// In order to use this script freely
-/// you must leave the following copyright
-/// information in this file:
-/// Copyright 2012 www.turningturnip.co.uk
-/// All rights reserved.
 
-include("../connect.php");
+
+include("connect.php");
 
 $username = $_GET['username'];
 

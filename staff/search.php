@@ -4,7 +4,6 @@ include('../auth.php');
 include('../admin/adminheader.php');
 include('../admin/leftdiv.php');
 
-
 ?>
 
 <form method="get" action="update.php">

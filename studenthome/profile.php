@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../connect.php');
+include('connect.php');
 $studentid=$_SESSION['username'];
 
 $result = mysql_query("SELECT * FROM studentdetails WHERE studentid='$studentid'");

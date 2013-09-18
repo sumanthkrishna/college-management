@@ -8,8 +8,8 @@ $_SESSION['subjectname']=$_GET['subjectname'];
 $_SESSION['subjectid']=$_GET['subjectid'];
 $_SESSION['section']=$_GET['section'];
 
-include('../connect.php');
-$query=mysql_query("select studentid from studentdetails where coursename='$_GET[coursename]' and department='$_GET[departmentname]' and year='$_GET[year]' and section='$_GET[section]'");
+include('connect.php');
+$query=mysql_query("select studentid from studentdetails where coursename='$_GET[coursename]' and departmentname='$_GET[departmentname]' and year='$_GET[year]' and section='$_GET[section]'");
 //$result=mysql_fetch_array($query);
 $num=mysql_num_rows($query);
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../connect.php');
+include('connect.php');
 $attendance=$_GET['attendance'];
 $periods=$_GET['periods'];
 $date=$_GET['date'];
@@ -16,7 +16,7 @@ $subjectid=$_SESSION['subjectid'];
 $section=$_SESSION['section'];
 
 
-$query=mysql_query("select studentid from studentdetails where coursename='$coursename' and department='$departmentname' and year='$year' and section='$section'");
+$query=mysql_query("select studentid from studentdetails where coursename='$coursename' and departmentname='$departmentname' and year='$year' and section='$section'");
 $num=mysql_num_rows($query);
 
 while($result=mysql_fetch_array($query))
@@ -27,7 +27,8 @@ while($result=mysql_fetch_array($query))
             {
                          foreach($periods as $period)
                               {
-                               mysql_query("insert into dailyattendance values('','$result[studentid]','$subjectid','$date','$period')");   
+                               mysql_query("insert into dailyattendance values('','$result[studentid]','$subjectid','$date','$period')"); 
+                               header( "refresh:5;url=index.php" );
                                }
              }
     }

@@ -2,6 +2,7 @@
 
 include('../admin/adminheader.php');
 include('leftdiv.php');
+//session_start();
 
 ?>
 

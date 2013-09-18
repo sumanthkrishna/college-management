@@ -1,18 +1,15 @@
 <?php
 session_start();
 include('../auth.php');
-include('../admin/adminheader.php');
+include('../include/header.php');
+include('leftdiv.php');
 
 ?>
 <a href="add.php">Add entry</a><br>
 <br>
 
 <?php
-/// In order to use this script freely
-/// you must leave the following copyright
-/// information in this file:
-/// Copyright 2012 www.turningturnip.co.uk
-/// All rights reserved.
+
 
 include("connect.php");
 
@@ -33,7 +30,7 @@ $id = stripslashes(mysql_result($result,$i,"id"));
 		$staticid = stripslashes(mysql_result($result,$i,"staticid"));
 		
 	$row .= '<tr>
-	<td><a href="update.php?id='.$id.'">'.$coursename.'</a></td>
+	<td><a href="update.php?id='.$id.'">'.$subjectname.'</a></td>
 	<td><a href="delete.php?id='.$id.'">Delete</a></td>
 	</tr>';
 	

@@ -73,18 +73,9 @@ include('../admin/leftdiv.php');
 <h1>Update Results here...</h1>
 
 <select name="subjectid" id="subjectid"> 
-   <option value="select">Select</option>
-  
-	<?php $result = mysql_query("SELECT subjectid FROM subjectdetails ");
-	$no=mysql_num_rows($result);
-	echo $no;
-	var_dump('$result');
-	while($res1=mysql_fetch_row($result))
-	{
-     		$subjectid=$res1[0]; ?>
-
-   <option value="<?php $subjectid ?>"> <?php $subjectid ?> </option>
-   <?php }?> 
+ <option value="A1201">A1201</option>
+  <option value="A1206">A1206</option>
+  <option value="A1240">A1240</option>
 </select>
 <input type="button" value="Apply Filter" onclick="getresult();"/>
 <br><br>
